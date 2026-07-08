@@ -12,8 +12,6 @@ window.addEventListener('DOMContentLoaded', () => {
     link.style.cursor = 'url("./assets/cat-cursor-link.cur "), pointer';
   })
 
-  const meowAudio = new Audio('./assets/meow.mp3'); 
-
   links.forEach(link => {
     link.addEventListener('click', (event) => {
       event.preventDefault();
