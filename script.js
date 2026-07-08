@@ -24,7 +24,7 @@ window.addEventListener('DOMContentLoaded', () => {
       console.log("meow");
       setTimeout(() => {
         if (destination) {
-          // window.location.href = destination;
+          window.location.href = destination;
           console.log("meow");
         }
       }, 350);
