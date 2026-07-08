@@ -9,6 +9,13 @@ body {
     text-align: center;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     background: var(--main-bg);
+    background-image: linear-gradient(180deg, var(--main-bg), #bdddfe);
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
 }
 
 h1 {
@@ -21,10 +28,14 @@ h1 {
 .wrapper {
     position: sticky;
     top: 0;
+    left: 0;
+    right: 0;
   display: flex;
   flex-direction: row;
   justify-content: center;
   padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid black;
   background: var(--main-bg);
   flex-wrap: wrap;
 }
@@ -60,4 +71,12 @@ footer {
     background: var(--main-bg);
     padding: 10px;
     border-top: 1px solid black;
+}
+
+.catto {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    margin: 20px;
+    font-size: 50px;
 }
