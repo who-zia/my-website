@@ -12,10 +12,24 @@ window.addEventListener('DOMContentLoaded', () => {
     link.style.cursor = 'url("./assets/cat-cursor-link.cur "), pointer';
   })
 
+  const meowAudio = new Audio('./assets/meow.mp3'); 
+
   links.forEach(link => {
-    link.addEventListener('click', () => {
+    link.addEventListener('click', (event) => {
+      event.preventDefault();
+      // event.stopPropagation();
+      
+      const destination = link.getAttribute('href');
+      
       meowAudio.currentTime = 0; 
       meowAudio.play();
+      console.log("meow");
+      setTimeout(() => {
+        if (destination) {
+          // window.location.href = destination;
+          console.log("meow");
+        }
+      }, 350);
     });
   });
 
