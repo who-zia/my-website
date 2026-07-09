@@ -27,7 +27,7 @@ window.addEventListener('DOMContentLoaded', () => {
           window.location.href = destination;
           console.log("meow");
         }
-      }, 350);
+      }, 500);
     });
   });
 
